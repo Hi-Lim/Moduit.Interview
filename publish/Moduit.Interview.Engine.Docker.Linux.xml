@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Moduit.Interview.Engine.Docker.Linux</name>
+    </assembly>
+    <members>
+        <member name="T:Moduit.Interview.Engine.Docker.Linux.AutofacModule">
+            <summary>
+            Autofac module class, you can configure any additional builder container setup here
+            </summary>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.AutofacModule.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Moduit.Interview.Engine.Docker.Linux.AutofacModule.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.AutofacModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:Moduit.Interview.Engine.Docker.Linux.Program">
+            <summary>
+            Init class of the apps
+            </summary>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.Program.Main(System.String[])">
+            <summary>
+            init method that called by default on startup
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Confgure apps behaviour
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moduit.Interview.Engine.Docker.Linux.Startup">
+            <summary>
+            Startup class that configure Apps DI, etc
+            </summary>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.Startup.#ctor(Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            Load needed apps configuration on constructor
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="P:Moduit.Interview.Engine.Docker.Linux.Startup.Configuration">
+            <summary>
+            Apps configuration file
+            </summary>
+        </member>
+        <member name="P:Moduit.Interview.Engine.Docker.Linux.Startup.AutofacContainer">
+            <summary>
+            Autofac container
+            </summary>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+             This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            Configure Dependency Injection from container builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:Moduit.Interview.Engine.Docker.Linux.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Hosting.IHostApplicationLifetime,QSI.Swagger.Common.SwaggerConfiguration,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
+            <param name="appLifetime"></param>
+            <param name="swaggerConfiguration"></param>
+            <param name="provider"></param>
+        </member>
+    </members>
+</doc>

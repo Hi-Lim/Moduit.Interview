@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moduit.Interview.Api.AspNetCore", "Moduit.Interview.Api.AspNetCore\Moduit.Interview.Api.AspNetCore.csproj", "{CD96BA17-1950-4A4D-9317-06B672DDCEC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moduit.Interview.Common", "Moduit.Interview.Common\Moduit.Interview.Common.csproj", "{C959104D-7E88-44AF-B3A3-45CE18C478AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moduit.Interview.Service", "Moduit.Interview.Service\Moduit.Interview.Service.csproj", "{634B3430-345A-4173-968E-65EF68EC9BA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moduit.Interview.Engine.Docker.Linux", "Moduit.Interview.Engine.Docker.Linux\Moduit.Interview.Engine.Docker.Linux.csproj", "{191E9D09-F270-40ED-A2FE-0EFF5DA993EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14FAFAD5-316E-467A-BE52-F2DA204239B8}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
+		Directory.Build.props = Directory.Build.props
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moduit.Interview.Repository", "Moduit.Interview.Repository\Moduit.Interview.Repository.csproj", "{120C2698-E0DB-41AE-8FBD-A80051F5BD5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moduit.Interview.Repository.NHibernate", "Moduit.Interview.Repository.NHibernate\Moduit.Interview.Repository.NHibernate.csproj", "{E6C5A3B5-EF70-4970-B357-D43CBB5E4846}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD96BA17-1950-4A4D-9317-06B672DDCEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD96BA17-1950-4A4D-9317-06B672DDCEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD96BA17-1950-4A4D-9317-06B672DDCEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD96BA17-1950-4A4D-9317-06B672DDCEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C959104D-7E88-44AF-B3A3-45CE18C478AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C959104D-7E88-44AF-B3A3-45CE18C478AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C959104D-7E88-44AF-B3A3-45CE18C478AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C959104D-7E88-44AF-B3A3-45CE18C478AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634B3430-345A-4173-968E-65EF68EC9BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634B3430-345A-4173-968E-65EF68EC9BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634B3430-345A-4173-968E-65EF68EC9BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634B3430-345A-4173-968E-65EF68EC9BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191E9D09-F270-40ED-A2FE-0EFF5DA993EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191E9D09-F270-40ED-A2FE-0EFF5DA993EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191E9D09-F270-40ED-A2FE-0EFF5DA993EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191E9D09-F270-40ED-A2FE-0EFF5DA993EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120C2698-E0DB-41AE-8FBD-A80051F5BD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120C2698-E0DB-41AE-8FBD-A80051F5BD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120C2698-E0DB-41AE-8FBD-A80051F5BD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120C2698-E0DB-41AE-8FBD-A80051F5BD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C5A3B5-EF70-4970-B357-D43CBB5E4846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C5A3B5-EF70-4970-B357-D43CBB5E4846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C5A3B5-EF70-4970-B357-D43CBB5E4846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C5A3B5-EF70-4970-B357-D43CBB5E4846}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA9B8A8D-1416-4792-90AC-C3554EC80B52}
+	EndGlobalSection
+EndGlobal

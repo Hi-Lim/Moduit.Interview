@@ -1,0 +1,13 @@
+<Project>
+  <!-- These properties will be shared for all projects -->
+
+  <PropertyGroup>
+    <Copyright>Copyright � 2022 Quadrant</Copyright>
+    <Company>Quadrant</Company>
+    <Version>1.0.0</Version>
+    <Authors>Nuralim</Authors>
+    <PackageIconUrl>http://devops.quadrant-si.id/icons/qsi-icon.png</PackageIconUrl>
+    <Description>Moduit Interview</Description>
+  </PropertyGroup>
+  
+</Project>

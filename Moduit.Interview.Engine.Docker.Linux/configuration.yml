@@ -1,0 +1,40 @@
+﻿orm:
+  connection:
+    databaseType: MSSQL2012
+    connectionString: "Server=tcp:localhost,1433;Database=qds;User ID=sa;Password=DevOpsQSI123@!"
+  helper:
+    showSql: false
+    formatSql: false
+  build:
+    create: false
+    update: false
+    scriptPath: SqlScript
+    scriptFileName: build.sql
+  map:
+    assemblies:
+      - Moduit.Interview.Repository.NHibernate
+
+moduit:
+  clientUrl: "https://screening.moduit.id"
+
+swagger:
+  securityDefinition: JWT
+  versioningMethod:
+    - type: HEADER
+      value: 'api-version'
+  behindProxy: true
+  generator:
+    doc:
+      name: v1
+      info:
+        title: Moduit.Interview API
+        version: '1.0'
+    describeAllEnumsAsStrings: true
+  route: 
+    template: 'api/docs/{documentName}/swagger.json'
+  ui:
+    prefix: api/docs
+    documentTitle: Moduit.Interview API
+    endpoint:
+      url: /swagger.json
+      name: Moduit.Interview API
